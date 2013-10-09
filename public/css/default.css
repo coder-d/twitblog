@@ -1,0 +1,109 @@
+body {
+text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+}
+a { 
+  color: #0BAADE;
+  text-decoration: none;
+  underline: 1px dotted #0BAADE;
+}
+
+a:hover {
+ color: #000000;
+ }
+
+
+/** Structure */
+#header {
+	padding: 20px;
+	background: #0BAADE;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 4px solid #0BAADE;
+}
+
+#content {
+	width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background: white;
+}
+
+#footer {
+	background: #0BAADE;
+	color: #fff;
+	padding: 20px;
+	border-top: 4px solid #0BAADE;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* Links */
+#header a {
+	color: #fff;
+	padding: 4px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+#header a:hover {
+	color:#000000;
+}
+
+/** Forms */
+form {width: 250px;
+	font: 100% verdana,arial,sans-serif;
+}
+form legend {font-weight: bold;width: 350px;
+	padding: 6px 12px 2px 12px;
+	position: relative;
+	top: -9px;
+	border-bottom: none;
+}
+
+form label { 
+	display: block;
+	float: left; 
+	width: 150px; 
+	padding: 0; 
+	margin: 9px 0 0;
+	text-align: right; 
+}
+
+form input, form select {
+	width: auto;
+	margin: 5px 0 0 10px;
+	border: 1px solid gray;
+	padding: 4px;
+}
+
+form input[type=submit]:hover {
+	cursor: pointer;
+	background: silver;
+}
+
+
+form br {clear: left;}
+
+textarea{width: 500px;height:100px;}
+.author  {
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+	margin-top: 5px;
+	color: #979797;
+}
+
+.error{background:#e0534e;height:25px;color:#ffffff;font-size:16px;font-weight:bold}
+.success{background:lightgreen;height:25px;color:#ffffff;font-size:16px;font-weight:bold}
+
+
+
+
+
+

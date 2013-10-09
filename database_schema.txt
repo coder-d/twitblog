@@ -1,0 +1,61 @@
+-- Database: `twitblog`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `body` varchar(160) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `post_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+
+--
+-- Dumping data for table `comments`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE IF NOT EXISTS `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `body` varchar(160) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `posts`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(25) NOT NULL,
+  `password` varchar(64) NOT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`userid`, `login`, `password`) VALUES
+(2, 'testuser', 'b2ab84fc83182c2079a3dd62d467f8aa5078e5774f431785c127cd262e9c7b65');
